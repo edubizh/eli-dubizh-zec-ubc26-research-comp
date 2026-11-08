@@ -23,14 +23,14 @@ Title page · Executive Summary · Project Overview · Investment Proposal · Co
 Primary numbers are drawn from the **Blockworks Research "Blockchains" dataset** (the official competition toolkit; REV = base + priority fees + MEV tips), cross-checked against Blockworks' Solana Q3 2026 Token Holder Report, Anza, Messari, 21Shares, and DeFiLlama. Price/cap as of early November 2026.
 
 ### Build
+Compiled with LaTeX (TinyTeX or any TeX Live). From the repo root, run twice so the running headers settle:
 ```bash
-npm install          # puppeteer (HTML → PDF)
-node report/render.js  # regenerates report/Solana_SOL_Long_Thesis_UBC2026.pdf
+pdflatex -output-directory report -jobname Solana_SOL_Long_Thesis_UBC2026 report/report.tex
+pdflatex -output-directory report -jobname Solana_SOL_Long_Thesis_UBC2026 report/report.tex
 ```
-Source: `report/report.html` (self-contained — inline CSS and SVG charts). `render.js` prints it to Letter PDF via headless Chrome.
+Source: `report/report.tex` (one self contained file; charts drawn in pgfplots; a black, gray, and white theme with no dashes anywhere in the text). Output: `report/Solana_SOL_Long_Thesis_UBC2026.pdf`.
 
 ### Files
-- `report/report.html` — report source (design, copy, charts)
-- `report/render.js` — PDF renderer
-- `report/Solana_SOL_Long_Thesis_UBC2026.pdf` — the submission
-- `Franklin Crypto Research Competiton Memo - UBC 2026 .pdf` — official competition rules
+- `report/report.tex` the LaTeX source (copy, design, charts)
+- `report/Solana_SOL_Long_Thesis_UBC2026.pdf` the submission
+- `Franklin Crypto Research Competiton Memo - UBC 2026 .pdf` the official competition rules
