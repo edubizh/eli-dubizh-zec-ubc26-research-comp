@@ -22,21 +22,23 @@
 \definecolor{mid}{gray}{0.42}
 \definecolor{soft}{gray}{0.58}
 \definecolor{rulegray}{gray}{0.80}
-\definecolor{barlite}{gray}{0.80}
+\definecolor{fillgray}{gray}{0.90}
+\definecolor{barlite}{gray}{0.78}
 \definecolor{barmid}{gray}{0.52}
 \definecolor{bardark}{gray}{0.17}
+\definecolor{zecgold}{RGB}{224,160,32}
 \color{ink}
 
 % ---------- spacing ----------
 \usepackage{parskip}
-\setlength{\parskip}{0.5\baselineskip}
+\setlength{\parskip}{0.55\baselineskip}
 \usepackage{setspace}
-\setstretch{1.07}
+\setstretch{1.08}
 
-% ---------- headings ----------
+% ---------- headings with a divider rule ----------
 \usepackage{titlesec}
-\titleformat{\section}{\sffamily\large\bfseries\color{ink}}{\thesection}{0.7em}{}
-\titlespacing*{\section}{0pt}{1.15\baselineskip}{0.4\baselineskip}
+\titleformat{\section}{\sffamily\large\bfseries\color{ink}}{\thesection}{0.7em}{}[\vspace{2.5pt}{\color{zecgold}\titlerule[0.9pt]}]
+\titlespacing*{\section}{0pt}{1.35\baselineskip}{0.55\baselineskip}
 \titleformat{\subsection}{\sffamily\normalsize\bfseries\color{ink}}{\thesubsection}{0.6em}{}
 \titlespacing*{\subsection}{0pt}{1.0\baselineskip}{0.25\baselineskip}
 
@@ -44,8 +46,8 @@
 \usepackage{booktabs}
 \usepackage{array}
 \usepackage{enumitem}
-\setlist[itemize]{leftmargin=1.3em,itemsep=4pt,topsep=3pt,parsep=0pt}
-\renewcommand{\arraystretch}{1.28}
+\setlist[itemize]{leftmargin=1.3em,itemsep=5pt,topsep=3pt,parsep=0pt}
+\renewcommand{\arraystretch}{1.3}
 
 % ---------- running header ----------
 \usepackage{fancyhdr}
@@ -62,7 +64,12 @@
 \pgfplotsset{compat=1.18}
 \usetikzlibrary{positioning}
 
+% ---------- design helpers ----------
+\newcommand{\figtitle}[1]{\par\vspace{2pt}{\sffamily\bfseries\small\color{ink} #1}\par\vspace{1pt}}
 \newcommand{\figcap}[2]{\par\vspace{3pt}{\footnotesize\sffamily\color{mid}\textbf{#1}\quad #2}\par}
+\newcommand{\statcell}[2]{\begin{minipage}[t]{0.235\linewidth}\centering{\sffamily\bfseries\fontsize{19}{21}\selectfont #1}\\[3pt]{\scriptsize\sffamily\color{mid}\MakeUppercase{#2}}\end{minipage}}
+\newcommand{\statband}[1]{\par\vspace{7pt}{\color{zecgold}\hrule height 0.9pt}\vspace{9pt}\noindent #1 \par\vspace{9pt}{\color{zecgold}\hrule height 0.9pt}\par\vspace{4pt}}
+\newcommand{\pullquote}[2]{\par\vspace{10pt}\begin{center}\begin{minipage}{0.9\linewidth}\centering{\fontsize{13.5}{17}\selectfont\color{ink}\itshape #1}\\[5pt]{\footnotesize\sffamily\color{mid}\MakeUppercase{#2}}\end{minipage}\end{center}\vspace{6pt}}
 
 \begin{document}
 
@@ -74,7 +81,7 @@
 \MakeUppercase{University Blockchain Conference 2026}}
 
 \vspace{10pt}
-{\color{rulegray}\hrule height 1pt}
+{\color{zecgold}\hrule height 1.8pt}
 \vspace{34pt}
 
 {\sffamily\bfseries\fontsize{29}{33}\selectfont A Narrative Bid,\\ Not an Earned Valuation\par}
@@ -104,126 +111,127 @@
 % ======================= 1. EXECUTIVE SUMMARY =======================
 \section{Executive Summary}
 
-We recommend a short position in Zcash (ZEC) at about \$1,280, a market capitalization near \$21.5B and the tenth largest crypto asset. Over a 6 to 12 month horizon we see a base case near \$650 (about 49\% downside) and a deeper case near \$450 (about 65\% downside), against a squeeze case near \$2,000 (about 56\% adverse) that we size for openly. This is a contrarian call into strength, and we treat it as one.
+We recommend a short position in Zcash (ZEC) at about \$1,280, a market capitalization near \$21.5B and the tenth largest crypto asset. Over a 6 to 12 month horizon we see a base case near \$650 (about 49\% downside) and a deeper case near \$450 (about 65\% downside), against a squeeze case near \$2,000 that we size for openly. This is a contrarian call into strength, and we treat it as one.
 
-{\small\sffamily\color{mid}\textbf{Snapshot, early November 2026}}
-\vspace{-4pt}
+\statband{\statcell{\$21.5B}{Market cap, rank 10}\hfill\statcell{3.3$\times$}{MVRV, holders up 240\%}\hfill\statcell{2$\times$}{Monero's cap, less usage}\hfill\statcell{29\%}{Of supply ever shielded}}
 
-\begin{center}
-\begin{tabular}{@{}lll@{}}
-\toprule
-{\sffamily\footnotesize\color{mid}METRIC} & {\sffamily\footnotesize\color{mid}VALUE} & {\sffamily\footnotesize\color{mid}WHAT IT SAYS} \\
-\midrule
-Price & about \$1,280 & down about 7\% post NU7 on liquidations \\
-Market cap & about \$21.5B & rank 10, up over 2,200\% in a year \\
-MVRV ratio & about 3.3 & the average coin is up about 240\% \\
-Realized price & about \$367 & average cost basis, a quarter of price \\
-Shielded supply & about 29\% & optional privacy, most ZEC transparent \\
-Cap versus Monero & about 2 times & paid for less real private usage \\
-Network fees & negligible & a monetary premium, not throughput \\
-\bottomrule
-\end{tabular}
-\end{center}
+Our angle is a fundamentals angle, in the language this panel uses, and it is not built on regulation. We argue that on every metric that defines value accrual, ZEC has not earned a top ten valuation. The most credible version of this view came from inside the industry: F2Pool cofounder Chun Wang called the move a narrative bid and challenged the comparison between Zcash and networks like Solana and Hyperliquid that actually generate economic value.
 
-Our angle is a fundamentals angle, in the language this panel uses. We are not arguing that ZEC is too expensive because it rose, and we are not building the case on regulation. We are arguing that on every metric that defines value accrual, ZEC has not earned a top ten valuation. The most credible version of this view came from inside the industry: F2Pool cofounder Chun Wang called the move a narrative bid, wrote that a big market cap does not mean a coin earned its place, and challenged the comparison between Zcash and networks like Solana and Hyperliquid that actually generate economic value. He is right. The price is a monetary premium placed on a privacy in the age of AI story, popularized in a Grayscale report, and that story produces no revenue, little real usage, and a valuation detached from any onchain throughput. The crowd is paying for the narrative. We are pricing the metrics.
+\pullquote{A big market cap does not mean a coin earned its place.}{Chun Wang, cofounder of F2Pool}
 
-The demand underneath the move is financial, not organic. ZEC rose more than 2,200\% in a year on a narrative stack, a closed United States inquiry, exchange traded fund speculation, and the age of AI thesis, and the ascent was mechanically amplified by cascading short liquidations, more than \$62 million in a single session in May. Its largest marginal buyer is a MicroStrategy style treasury vehicle, Cypherpunk Technologies, which holds about 1.9\% of supply at a \$342 cost. That structure inflates the move on the way up and reverses the moment its premium compresses, and the reversal has started: NU7 shipped, and ZEC fell about 7\% on long liquidations and outflows from the Grayscale Zcash Trust.
-
-We are honest about the difficulty. Momentum is strong, shielded usage is rising, a United States fund could still be approved, and privacy coins have punished short sellers before. The thesis does not rest on calling the exact top. It rests on a valuation that every fundamental, usage, comparables, and holder profit, says is unearned, meeting the moment its reflexive bid rolls over.
+He is right. The price is a monetary premium placed on a privacy in the age of AI story, popularized in a Grayscale report, and that story produces no revenue, little real usage, and a valuation detached from any onchain throughput. The demand underneath it is financial, not organic: the rise was mechanically amplified by more than \$62 million of short liquidations in a single May session, and the largest marginal buyer is a MicroStrategy style treasury vehicle, Cypherpunk Technologies, holding about 1.9\% of supply at a \$342 cost. That bid inflates the move on the way up and reverses the moment its premium compresses, and the reversal has started: NU7 shipped, and ZEC fell about 7\% on long liquidations and outflows from the Grayscale Zcash Trust. The crowd is paying for the narrative. We are pricing the metrics.
 
 % ======================= 2. PROJECT OVERVIEW =======================
 \section{Project Overview}
 
 \subsection{What Zcash is, and why it ran}
-Zcash is a privacy focused cryptocurrency that shields transaction details using zero knowledge cryptography, with a fixed cap of 21 million coins that mirrors Bitcoin. In 2026 a forgotten 2016 project became a top ten asset. A United States inquiry closed with no action in January, Grayscale moved toward a Zcash exchange traded fund and published a report framing privacy as essential in the age of AI, Multicoin Capital disclosed a position, shielded usage rose as wallets defaulted users into encrypted pools, and the NU7 upgrade cut block times. We take the bull case seriously. The engineering is real and the narrative is powerful. The question this panel would ask is the right one: has the valuation been earned.
+Zcash is a privacy focused cryptocurrency that shields transaction details using zero knowledge cryptography, with a fixed cap of 21 million coins that mirrors Bitcoin. In 2026 a forgotten 2016 project became a top ten asset. A United States inquiry closed with no action in January, Grayscale moved toward a Zcash exchange traded fund and framed privacy as essential in the age of AI, Multicoin Capital disclosed a position, shielded usage rose as wallets defaulted users into encrypted pools, and the NU7 upgrade cut block times. We take the bull case seriously. The engineering is real and the narrative is powerful. The question this panel would ask is the right one: has the valuation been earned. Figure 1 shows why we think the answer is no.
 
-\subsection{It has not earned the valuation}
-It has not. Value in this market accrues to networks that produce economic activity, the exact lens behind the Blockworks real economic value framework and behind the Blockworks Zcash Token Holder Report, which describes the network as only entering its first stage of scale. ZEC generates negligible transaction fees against a \$21.5B capitalization. Its roughly \$1.5B of daily volume is exchange speculation, not private payment, while actual shielded activity runs near 5,000 transactions a day. Only about 29\% of supply is ever shielded, so most holders pay a privacy premium for a feature they never use. The cleanest expression of the mispricing is the comparison with Monero, which delivers mandatory privacy to its entire supply yet trades at about half of Zcash's market capitalization. The market is paying twice as much for the privacy asset that does less private payment.
-
+\figtitle{Figure 1 \quad The reflexive run, and the profit it now sits on}
 \begin{center}
 \begin{tikzpicture}
 \begin{axis}[
-  width=0.80\linewidth, height=3.7cm,
-  xbar, bar width=15pt, bar shift=0pt,
-  xmin=0, xmax=30,
-  axis x line=none, axis y line=left,
-  y axis line style={draw=none}, ytick style={draw=none},
-  symbolic y coords={Monero,Zcash}, ytick={Monero,Zcash},
-  yticklabel style={font=\footnotesize\color{ink}},
-  enlarge y limits=0.5, clip=false,
-]
-\addplot[draw=none,fill=bardark] coordinates {(21.5,Zcash)};
-\addplot[draw=none,fill=barlite] coordinates {(11.7,Monero)};
-\node[right,font=\scriptsize,text=ink] at (axis cs:21.5,Zcash) {\;\;\$21.5B, about 29\% of supply shielded};
-\node[right,font=\scriptsize,text=ink] at (axis cs:11.7,Monero) {\;\;\$11.7B, privacy mandatory for all supply};
-\end{axis}
-\end{tikzpicture}
-\figcap{Figure 1.}{Market capitalization, privacy leaders. Zcash is valued at roughly twice Monero while shielding under a third of its own supply against Monero's mandatory privacy. The premium accrues to less private usage, not more. Source: CoinGecko, ZecStats, Messari.}
-\end{center}
-
-\subsection{The froth is measurable, and the bid is reflexive}
-This is not a judgment call, it is on the ledger. The market value to realized value ratio sits near 3.3, with a realized price, the average cost basis across all coins, near \$367. The typical holder is up roughly 240\%, the kind of unrealized profit overhang that precedes distribution rather than accumulation. The holders most able to sell are the ones who inflated the move: a treasury vehicle at a \$342 cost basis and the leveraged traders whose liquidations drove the squeeze. When a monetary premium is this reflexive and this far above the cost basis of its own buyers, it does not need a regulatory shock to reverse. It needs its marginal buyer to pause, which, with the last upgrade now shipped, is happening.
-
-\begin{center}
-\begin{tikzpicture}
-\begin{axis}[
-  width=0.9\linewidth, height=5.0cm,
-  ymin=0, ymax=1500,
+  width=\linewidth, height=6.7cm,
+  ymin=0, ymax=1560,
   axis x line=bottom, axis y line=left,
   x axis line style={draw=rulegray}, y axis line style={draw=rulegray},
   xtick={1,13,25,29,35}, xticklabels={Jan 2024,Jan 2025,Jan 2026,May 2026,Nov 2026},
   xticklabel style={font=\scriptsize\color{mid}},
-  ytick={0,367,750,1100,1500}, yticklabel style={font=\scriptsize\color{mid}},
-  ymajorgrids, major grid style={draw=rulegray,line width=0.2pt},
-  enlarge x limits=0.03, clip=false,
+  ytick={0,367,650,1000,1500}, yticklabel style={font=\scriptsize\color{mid}},
+  enlarge x limits=0.02, clip=false,
 ]
-\addplot[draw=bardark,line width=1pt,mark=none] coordinates {
+\fill[fillgray] (axis cs:1,450) rectangle (axis cs:35,650);
+\draw[dashed,draw=mid,line width=0.7pt] (axis cs:1,367) -- (axis cs:35,367);
+\addplot[draw=zecgold,line width=1.6pt,mark=none] coordinates {
  (1,30)(2,28)(3,32)(4,30)(5,28)(6,25)(7,27)(8,30)(9,33)(10,35)(11,38)(12,40)
  (13,42)(14,45)(15,48)(16,46)(17,50)(18,48)(19,52)(20,55)(21,58)(22,55)(23,50)(24,52)
  (25,55)(26,110)(27,220)(28,400)(29,642)(30,520)(31,700)(32,880)(33,1180)(34,1400)(35,1280)};
-\draw[dashed,draw=mid,line width=0.7pt] (axis cs:25,367) -- (axis cs:35,367);
-\node[font=\scriptsize,text=mid,anchor=west] at (axis cs:25,410) {realized price about \$367 (average cost basis)};
-\draw[dashed,draw=soft,line width=0.6pt] (axis cs:25,650) -- (axis cs:35,650);
-\node[font=\scriptsize,text=soft,anchor=west] at (axis cs:30.4,690) {base target \$650};
-\node[font=\scriptsize,text=ink,anchor=south east] at (axis cs:35,1280) {short entry \$1,280\;};
-\node[font=\scriptsize\sffamily,text=ink,anchor=south west] at (axis cs:25.3,1150) {MVRV about 3.3};
+\node[font=\scriptsize\sffamily,text=ink,anchor=west,align=left] at (axis cs:1.6,1340) {MVRV about 3.3};
+\node[font=\scriptsize,text=mid,anchor=west,align=left] at (axis cs:1.6,1180) {the average holder\\is up about 240\%};
+\node[font=\scriptsize,text=mid,anchor=west] at (axis cs:1.6,560) {reversion target \$450 to \$650};
+\node[font=\scriptsize,text=mid,anchor=west] at (axis cs:1.6,330) {realized price \$367, the average cost basis};
+\node[font=\scriptsize\sffamily,text=ink,anchor=east,align=right] (rl) at (axis cs:25.5,980) {a narrative bid:\\short squeezes and\\treasury buying};
+\draw[->,draw=soft,line width=0.6pt] (rl.south) -- (axis cs:31,715);
+\node[font=\scriptsize,text=ink,anchor=south east] at (axis cs:35,1285) {short entry \$1,280\;};
 \end{axis}
 \end{tikzpicture}
-\figcap{Figure 2.}{Zcash price, indicative monthly, against the onchain realized price. With price near three times the average cost basis, the typical holder sits on a large gain, a distribution setup rather than an accumulation one. Source: CoinGecko, Messari, ZecStats.}
+\figcap{Figure 1.}{Zcash price, indicative monthly, USD. The shaded band is the reversion target; the dashed line is the onchain realized price. With price near three times the average cost basis, the typical holder sits on a large unrealized gain, a distribution setup. Source: CoinGecko, Messari, ZecStats.}
 \end{center}
 
+\subsection{It has not earned the valuation}
+Value in this market accrues to networks that produce economic activity, the exact lens behind the Blockworks real economic value framework and behind the Blockworks Zcash Token Holder Report, which describes the network as only entering its first stage of scale. ZEC generates negligible transaction fees against a \$21.5B capitalization. Its roughly \$1.5B of daily volume is exchange speculation, not private payment, while actual shielded activity runs near 5,000 transactions a day. Only about 29\% of supply is ever shielded, so most holders pay a privacy premium for a feature they never use. The cleanest expression of the mispricing is Monero, which delivers mandatory privacy to its entire supply yet trades at about half of Zcash's market capitalization. The market is paying twice as much for the privacy asset that does less private payment.
+
+\subsection{The froth is measurable, and the bid is reflexive}
+This is not a judgment call, it is on the ledger, and Figure 1 shows it. The market value to realized value ratio sits near 3.3, with a realized price near \$367. The holders most able to sell are the ones who inflated the move: a treasury vehicle at a \$342 cost basis and the leveraged traders whose liquidations drove the squeeze. When a monetary premium is this reflexive and this far above the cost basis of its own buyers, it does not need a regulatory shock to reverse. It needs its marginal buyer to pause, which, with the last upgrade now shipped, is happening.
+
 \subsection{Fragility, token assessment, and risks}
-The soundness case is weaker than the price implies. In May 2026 researchers disclosed a counterfeiting vulnerability in the Orchard shielded pool that had gone undetected for about four years and could have minted unlimited coins; ZEC fell more than a third, and the network needed the Ironwood upgrade just to make its circulating supply independently verifiable. The entire founding team at the Electric Coin Company departed in January 2026 after a governance dispute. Issuance runs near 3.25\% a year, close to \$2.2 million a day that miners sell. For a token valued as digital gold, unverifiable supply, a counterfeiting bug, governance turnover, and real inflation are not small details.
+The soundness case is weaker than the price implies. In May 2026 researchers disclosed a counterfeiting vulnerability in the Orchard shielded pool that had gone undetected for about four years and could have minted unlimited coins; ZEC fell more than a third, and the network needed the Ironwood upgrade just to make its circulating supply independently verifiable. The entire founding team at the Electric Coin Company departed in January 2026 after a governance dispute. Issuance runs near 3.25\% a year, close to \$2.2 million a day that miners sell. For a token valued as digital gold, these are not small details.
 
 \textbf{Risks to the short, stated plainly.}
 \begin{itemize}
-  \item Momentum and reflexivity. ZEC is in a strong uptrend and short covering has repeatedly fueled it. We size small, define risk, and lean on the metric gap and the rollover already underway rather than on calling the exact top.
-  \item A United States exchange traded fund approval or a fresh wave of treasury buying would extend the mania. We weight this as a real adverse scenario.
-  \item Rising shielded usage is genuine, but it is still a minority of supply and does not underwrite a \$21.5B premium. A longer term regulatory overhang on privacy assets exists in some jurisdictions; we treat it as a secondary risk, not the thesis.
+  \item Momentum and reflexivity. ZEC is in a strong uptrend and short covering has repeatedly fueled it. We size small and lean on the metric gap and the rollover already underway rather than on calling the exact top.
+  \item A United States exchange traded fund approval or renewed treasury buying would extend the mania. We weight this as a real adverse scenario.
+  \item Rising shielded usage is genuine, but still a minority of supply. A regulatory overhang exists in some jurisdictions; we treat it as a secondary risk, not the thesis.
 \end{itemize}
 
 % ======================= 3. INVESTMENT PROPOSAL =======================
 \section{Investment Proposal}
 
-Position: short Zcash. Entry near \$1,280. Horizon: 6 to 12 months. The thesis resolves as a narrative priced monetary premium reverts toward the fundamentals, usage, and holder cost basis that actually support it.
+Position: short Zcash. Entry near \$1,280. Horizon: 6 to 12 months. The thesis resolves as a narrative priced premium reverts toward the fundamentals, usage, and holder cost basis that support it. The two charts below frame the trade: what the asset is worth against its only real peer, and where a reversion leads.
+
+\vspace{2pt}
+\noindent
+\begin{minipage}[t]{0.485\linewidth}
+\figtitle{Twice the cap, less privacy}
+\begin{tikzpicture}
+\begin{axis}[
+  width=\linewidth, height=3.5cm,
+  xbar, bar width=14pt, bar shift=0pt,
+  xmin=0, xmax=30,
+  axis x line=none, axis y line=left,
+  y axis line style={draw=none}, ytick style={draw=none},
+  symbolic y coords={Monero,Zcash}, ytick={Monero,Zcash},
+  yticklabel style={font=\footnotesize\color{ink}},
+  enlarge y limits=0.7, clip=false,
+]
+\addplot[draw=none,fill=zecgold] coordinates {(21.5,Zcash)};
+\addplot[draw=none,fill=barlite] coordinates {(11.7,Monero)};
+\node[right,font=\scriptsize,text=ink] at (axis cs:21.5,Zcash) {\;\;\$21.5B};
+\node[right,font=\scriptsize,text=ink] at (axis cs:11.7,Monero) {\;\;\$11.7B};
+\end{axis}
+\end{tikzpicture}
+\par\vspace{1pt}{\scriptsize\sffamily\color{mid} Zcash shields about 29\% of supply; Monero is mandatory for all.}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.485\linewidth}
+\figtitle{The reversion path}
+\begin{tikzpicture}
+\begin{axis}[
+  width=\linewidth, height=4.0cm,
+  xbar, bar width=9pt, bar shift=0pt,
+  xmin=0, xmax=2500,
+  axis x line=none, axis y line=left,
+  y axis line style={draw=none}, ytick style={draw=none},
+  symbolic y coords={Deeper,Base,Entry,Squeeze}, ytick={Deeper,Base,Entry,Squeeze},
+  yticklabel style={font=\scriptsize\color{ink}},
+  enlarge y limits=0.2, clip=false,
+]
+\draw[dashed,draw=mid,line width=0.6pt] (axis cs:367,Deeper) -- (axis cs:367,Squeeze);
+\addplot[draw=none,fill=bardark] coordinates {(450,Deeper)(650,Base)};
+\addplot[draw=none,fill=zecgold] coordinates {(1280,Entry)};
+\addplot[draw=none,fill=barlite] coordinates {(2000,Squeeze)};
+\node[right,font=\tiny,text=ink] at (axis cs:450,Deeper) {\;\$450};
+\node[right,font=\tiny,text=ink] at (axis cs:650,Base) {\;\$650};
+\node[right,font=\tiny,text=ink] at (axis cs:1280,Entry) {\;\$1,280};
+\node[right,font=\tiny,text=ink] at (axis cs:2000,Squeeze) {\;\$2,000};
+\node[font=\tiny,text=mid,anchor=south west] at (axis cs:367,Squeeze) {realized \$367};
+\end{axis}
+\end{tikzpicture}
+\par\vspace{1pt}{\scriptsize\sffamily\color{mid} Entry, our targets, and the squeeze case against realized price.}
+\end{minipage}
+\figcap{Figure 2.}{Left, market capitalization of the two privacy leaders. Right, the scenario prices: a base case near \$650 is about 49\% of downside, a deeper case near \$450 about 65\%, against a squeeze toward \$2,000 weighted at 35\%. Source: CoinGecko, Messari, ZecStats.}
 
 \subsection{Valuation on the metrics that matter}
-We anchor on the three lenses this panel values. First, value versus usage: ZEC produces almost no economic throughput, so on any network value to activity measure it is among the most richly valued large assets in crypto, and the Blockworks Zcash report itself frames real adoption as early. Second, comparables: Monero does more real private payment for half the market capitalization, so Zcash carries a privacy premium of roughly two times. Third, holder economics: an MVRV near 3.3 and a realized price near \$367 leave the marginal seller deeply in profit while issuance adds about \$2.2 million of daily supply. Fundamentals, comparables, and flows point the same way.
-
-\subsection{Scenario price targets}
-\begin{center}
-\begin{tabular}{@{}llll>{\raggedright\arraybackslash}m{2.4in}@{}}
-\toprule
-{\sffamily\footnotesize\color{mid}SCENARIO} & {\sffamily\footnotesize\color{mid}ZEC} & {\sffamily\footnotesize\color{mid}SHORT RETURN} & {\sffamily\footnotesize\color{mid}WEIGHT} & {\sffamily\footnotesize\color{mid}WHAT DRIVES IT} \\
-\midrule
-Deeper & \$450 & about 65\% gain & 20\% & The premium reverts toward the realized price as the treasury flywheel reverses and holders in profit distribute. \\
-Base & \$650 & about 49\% gain & 45\% & The narrative premium compresses, momentum breaks after NU7, and the valuation re rates toward usage and comparables. \\
-Squeeze & \$2,000 & about 56\% loss & 35\% & A United States fund approval or renewed treasury buying extends the mania before any reversion. \\
-\bottomrule
-\end{tabular}
-\end{center}
-
-The probability weighting above implies a modest positive expected value, and we present the trade as higher variance than a long. The edge is not a prediction of the exact top. It is the size of the gap between a top ten valuation and the fundamentals underneath it, meeting a reflexive bid that has already begun to roll over.
+We anchor on the three lenses this panel values. First, value versus usage: ZEC produces almost no economic throughput, so on any network value to activity measure it is among the most richly valued large assets in crypto, and the Blockworks Zcash report itself frames real adoption as early. Second, comparables: Monero does more real private payment for half the market capitalization, so Zcash carries a privacy premium of roughly two times. Third, holder economics: an MVRV near 3.3 and a realized price near \$367 leave the marginal seller deeply in profit while issuance adds about \$2.2 million of daily supply. A probability weighting of 20\% deeper, 45\% base, and 35\% squeeze implies a modest positive expected value on a higher variance trade. Fundamentals, comparables, and flows point the same way.
 
 \subsection{Why this is the trade}
 Short sellers who fought this asset on momentum alone were run over, and we do not repeat that mistake. We are not shorting ZEC because it went up. We are shorting a measurable gap between price and fundamentals, the same gap an industry insider flagged when he said a big market cap does not mean a coin earned its place, with the reflexive buyer that created the premium now the most likely accelerant of its reversal.
@@ -231,11 +239,19 @@ Short sellers who fought this asset on momentum alone were run over, and we do n
 % ======================= 4. CONCLUSION =======================
 \section{Conclusion}
 
-Zcash is a genuinely improved network wrapped in a valuation its fundamentals do not support. The shielded usage is rising and the narrative has never been louder, but none of that underwrites a \$21.5B premium on an asset that earns almost no economic value, shields under a third of its supply, trades at twice the capitalization of the privacy coin that does more private payment, and sits at an MVRV where the average holder is up more than twofold.
-
-The market is pricing a story, financial privacy in the age of AI, as if it were adoption. On the metrics that define value accrual, usage, comparables, holder economics, and real throughput, ZEC has not earned its place in the top ten, and its reflexive bid is already turning. The risk and reward favors the short, provided it is sized for a mania that can still extend.
+Zcash is a genuinely improved network wrapped in a valuation its fundamentals do not support. The shielded usage is rising and the narrative has never been louder, but none of that underwrites a \$21.5B premium on an asset that earns almost no economic value, shields under a third of its supply, trades at twice the capitalization of the privacy coin that does more private payment, and sits at an MVRV where the average holder is up more than twofold. The market is pricing a story, financial privacy in the age of AI, as if it were adoption. On the metrics that define value accrual, ZEC has not earned its place in the top ten, and its reflexive bid is already turning.
 
 \textbf{Recommendation: short Zcash over a 6 to 12 month horizon. Base target \$650, about 49\% downside. Deeper target \$450. Acknowledged squeeze risk toward \$2,000. The narrative is loud. The metrics are not. That gap is the trade.}
+
+\vspace{14pt}
+{\color{zecgold}\hrule height 0.9pt}
+\vspace{10pt}
+\noindent
+\begin{minipage}[t]{0.31\linewidth}\centering{\sffamily\bfseries\fontsize{18}{20}\selectfont +49\%}\\[3pt]{\scriptsize\sffamily\color{mid}\MakeUppercase{Base, ZEC \$650}}\end{minipage}\hfill
+\begin{minipage}[t]{0.31\linewidth}\centering{\sffamily\bfseries\fontsize{18}{20}\selectfont +65\%}\\[3pt]{\scriptsize\sffamily\color{mid}\MakeUppercase{Deeper, ZEC \$450}}\end{minipage}\hfill
+\begin{minipage}[t]{0.31\linewidth}\centering{\sffamily\bfseries\fontsize{18}{20}\selectfont (56\%)}\\[3pt]{\scriptsize\sffamily\color{mid}\MakeUppercase{Squeeze, ZEC \$2,000}}\end{minipage}
+\vspace{10pt}
+{\color{zecgold}\hrule height 0.9pt}
 
 % ======================= APPENDIX =======================
 \clearpage
