@@ -1,0 +1,19 @@
+metric,value,unit,as_of,source,note
+network_rev_q3_2026,204000,usd,2026-Q3,Blockworks Zcash Token Holder Report Q3 2026,Entire network REV for the quarter; fees only (no MEV or tips); up 85% QoQ
+network_rev_q2_2026,110000,usd,2026-Q2,Blockworks Zcash Token Holder Report Q3 2026,Prior quarter network REV
+median_tx_fee,0.13,usd,2026-Q3,Blockworks Zcash Token Holder Report Q3 2026,Up from about 0.07 in Q2
+transactions_q3_2026,710047,count,2026-Q3,Blockworks Zcash Token Holder Report Q3 2026,Up 21% QoQ; about 3x Q3 2025
+shielded_supply_share,29.1,percent,2026-Q3,Blockworks Zcash Token Holder Report Q3 2026,Share of supply ever shielded; up from 26.3% in Q2
+shielded_supply_zec,4940000,zec,2026-Q3,Blockworks Zcash Token Holder Report Q3 2026,Total shielded ZEC; up 11.8% from 4.42M
+shielded_touch_tx_share,52.7,percent,2026-Q3,Blockworks Zcash Token Holder Report Q3 2026,Share of non-coinbase tx touching a shielded pool; from 27.4%
+orchard_pool_sealed,379000,zec,2026-Q3,Blockworks Zcash Token Holder Report Q3 2026,ZEC left in sealed exit-only Orchard pool after the Q2 counterfeiting disclosure
+circulating_supply,16950000,zec,2026-11,Blockworks asset-supply,Of a 21M hard cap; total 17.03M
+annual_issuance,3.3,percent,2026,Blockworks Zcash Token Holder Report Q3 2026,Derived from Q3 block subsidy of 141882 ZEC; dev fund takes 12% of block rewards
+dev_fund_share,12,percent,2026,Blockworks Zcash Token Holder Report Q3 2026,Share of block rewards routed to the coinholder-controlled developer fund
+market_cap,20550000000,usd,2026-11-07,Blockworks asset-marketcap,CoinGecko corroborates about 21.1B on 2026-11-09
+price,1212,usd,2026-11-07,Blockworks asset-price,CoinGecko corroborates about 1238 on 2026-11-09
+monero_market_cap,11280000000,usd,2026-11-07,Blockworks asset-marketcap,About 1.8x smaller than ZEC despite mandatory privacy
+monero_price,599,usd,2026-11-07,Blockworks asset-price,CoinGecko corroborates about 598 on 2026-11-09
+price_to_rev_annualized,25000,ratio,2026-11,Derived,Market cap divided by Q3 REV annualized (204000 x 4); vs about 40 that Blockworks calls grounded for Solana and Tron
+zcsh_etf_inflows_q3,263000000,usd,2026-Q3,Blockworks Zcash Token Holder Report Q3 2026,Grayscale ZCSH net inflows by quarter end; AUM about 996M; flows later turned negative
+cypherpunk_zec_holdings,326000,zec,2026-Q3,Blockworks Zcash Token Holder Report Q3 2026,About 463M in ZEC; treasury trades below NAV (mNAV about 0.67 per DefiLlama)

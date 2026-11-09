@@ -9,3 +9,6 @@
 
 # legacy node tooling
 node_modules/
+
+# local working note, kept out of the committed repo
+HANDOFF.md
