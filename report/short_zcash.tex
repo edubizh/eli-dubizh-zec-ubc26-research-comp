@@ -8,6 +8,7 @@
 \usepackage{charter}
 \usepackage[scaled=0.92]{helvet}
 \usepackage{microtype}
+\usepackage{graphicx}
 
 % ---------- no hyphenation anywhere ----------
 \usepackage[none]{hyphenat}
@@ -34,7 +35,7 @@
 \usepackage{parskip}
 \setlength{\parskip}{0.5\baselineskip}
 \usepackage{setspace}
-\setstretch{1.05}
+\setstretch{1.08}
 
 % ---------- headings ----------
 \usepackage{titlesec}
@@ -87,7 +88,11 @@
 
 \vspace{13pt}
 {\color{zecgold}\hrule height 2pt}
-\vspace{44pt}
+\vspace{30pt}
+
+\noindent\raisebox{-0.5\height}{\includegraphics[height=0.5in]{report/zcash-logo.png}}\hspace{12pt}\raisebox{-0.5\height}{\sffamily\bfseries\fontsize{15}{18}\selectfont\color{zecgold}ZCASH (ZEC)}
+
+\vspace{26pt}
 
 {\sffamily\bfseries\fontsize{32}{38}\selectfont A Narrative Bid,\\ Not an Earned Valuation\par}
 
@@ -108,7 +113,8 @@
 {\sffamily\footnotesize\bfseries\color{zecgold}ORGANIZATION} & Purdue University \\[10pt]
 {\sffamily\footnotesize\bfseries\color{zecgold}TRACK} & Short, Market Cap Over \$1B \\[10pt]
 {\sffamily\footnotesize\bfseries\color{zecgold}CONTACT} & ed200419@gmail.com \\[10pt]
-{\sffamily\footnotesize\bfseries\color{zecgold}DATE} & November 2026 \\
+{\sffamily\footnotesize\bfseries\color{zecgold}DATE} & November 2026 \\[10pt]
+{\sffamily\footnotesize\bfseries\color{zecgold}REPOSITORY} & \href{https://github.com/edubizh/eli-dubizh-zec-ubc26-research-comp}{github.com/edubizh/eli-dubizh-zec-ubc26-research-comp} \\
 \end{tabular}}
 
 \vspace{22pt}
@@ -168,7 +174,7 @@ Zcash hides transaction details with zero knowledge cryptography, on a fixed cap
 \charttitle{Figure 1 \quad The market cap exploded. What the network earns did not.}
 \begin{tikzpicture}
 \begin{axis}[
-  width=\linewidth, height=6.2cm,
+  width=\linewidth, height=7.8cm,
   ymode=log, ymin=500, ymax=6e10,
   xmin=2024.6, xmax=2026.98,
   axis x line=bottom, axis y line=left,
@@ -426,8 +432,15 @@ Largest corporate holder & Cypherpunk, about 1.9\% of supply, \$342 cost \\
 \end{tabular}
 \end{center}
 
-\vspace{12pt}
-{\footnotesize\color{mid}\textbf{Data and reproducibility.}\quad Every figure in this report is built from free, public data by the scripts in the repository below. Prices and fees from DefiLlama, CoinMetrics, CoinGecko, and Artemis; network revenue from the Blockworks Zcash Token Holder Report; the Orchard disclosure from Allium. Reproduce or audit any number here: \href{https://github.com/edubizh/eli-dubizh-zcash-ubc26-research-comp}{github.com/edubizh/eli-dubizh-zcash-ubc26-research-comp}}
+\vspace{14pt}
+\begin{center}
+{\color{zecgold}\hrule height 0.6pt}
+\vspace{7pt}
+{\sffamily\footnotesize\color{ink} Open source. Live data, the code behind every figure, and the full commit history:\\[3pt]
+{\bfseries\color{zecgold}\href{https://github.com/edubizh/eli-dubizh-zec-ubc26-research-comp}{github.com/edubizh/eli-dubizh-zec-ubc26-research-comp}}}
+\vspace{7pt}
+{\color{zecgold}\hrule height 0.6pt}
+\end{center}
 
 % ======================= REFERENCES =======================
 \clearpage
