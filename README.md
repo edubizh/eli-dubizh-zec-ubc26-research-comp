@@ -15,7 +15,15 @@ Report:        report/Zcash_ZEC_Short_Thesis_UBC2026.pdf
 ```
 
 ### Thesis
-Zcash melted up into a top ten market cap on narrative, not fundamentals. The whole network earned about $712,000 of fees over the past year against a roughly $20 billion valuation, it is a weaker store of value than Bitcoin after a four year unverifiable counterfeiting bug, and the bid is reflexive. Short near $1,170. Base target $650 (Monero parity), deeper $450, acknowledged squeeze risk toward $2,000.
+Zcash melted up into a top ten market cap on narrative, not fundamentals. Over the past year the whole network earned about $712,000 in fees against a roughly $20 billion valuation. Hyperliquid carries about the same market cap and earned $895 million in fees over the same stretch, more than a thousand times as much. Same price, a thousand times the business. The bid is reflexive, so we are short.
+
+| Scenario | ZEC price | Return to the short |
+| --- | --- | --- |
+| Short entry | ~$1,170 | |
+| Base target | ~$650 | +44% |
+| Squeeze risk | ~$2,000 | (71%) |
+
+Base case is roughly Monero parity, over a 6 to 12 month horizon.
 
 ### Data and reproducibility
 Every figure is built from free, public data. Pricing and fees from DefiLlama, CoinMetrics, CoinGecko, and Artemis; network revenue from the Blockworks Zcash Token Holder Report; the Orchard disclosure from Allium.
