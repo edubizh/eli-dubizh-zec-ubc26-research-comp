@@ -22,7 +22,7 @@ import urllib.request
 from datetime import datetime, timezone
 
 API = "https://api.coingecko.com/api/v3"
-COINS = {"zcash": "ZEC", "monero": "XMR"}
+COINS = {"zcash": "ZEC", "monero": "XMR", "bitcoin": "BTC", "ethereum": "ETH"}
 DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data")
 
 

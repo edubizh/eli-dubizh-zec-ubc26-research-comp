@@ -1,0 +1,10 @@
+metric,value,source
+pre_crash_close_usd,459.03,Coinbase 2026-06-04
+intraday_low_usd,250.00,Coinbase 2026-06-05
+peak_to_low_pct,64,CoinDesk (685 high to 247 low, Hyperliquid)
+total_liquidations_usd,118000000,CoinDesk
+long_liquidations_usd,76590000,Bitget News
+short_liquidations_usd,29980000,Bitget News
+open_interest_drop_pct,38.56,Bitget News
+bug_lifetime_years,4,Orchard live since May 2022
+catalyst,Four year Orchard counterfeiting vulnerability disclosure,CoinDesk

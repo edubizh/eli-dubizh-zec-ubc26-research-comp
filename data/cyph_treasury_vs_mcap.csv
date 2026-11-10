@@ -1,0 +1,7 @@
+item,value,asof,source
+zec_held,323394,2026-08-11,SEC 10-Q
+weighted_avg_cost_per_zec_usd,341.83,2026-06-30,SEC 10-Q
+pct_of_zec_supply,1.9,2026-08-11,StockTitan
+zec_treasury_value_at_spot_usd,378000000,2026-11-09,computed 323394 x 1170
+cyph_market_cap_usd,310360000,2026-11-06,stockanalysis.com
+discount_to_nav_pct,18,2026-11-09,computed (310M vs 378M)

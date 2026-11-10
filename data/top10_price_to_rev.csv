@@ -1,0 +1,11 @@
+asset,symbol,market_cap_usd,annualized_network_fees_usd,price_to_fees_x,fee_type
+Bitcoin,BTC,1509454765402,78867169,19139,usage
+Ethereum,ETH,259847421784,176603888,1471,usage
+BNB,BNB,90742383993,159390509,569,usage
+XRP,XRP,69897197724,283228,246788,near_zero_by_design
+Solana,SOL,51154819765,232034579,220,usage
+Tron,TRX,30124728512,333782586,90,usage
+Zcash,ZEC,19976953357,714314,27967,usage_marketed
+Monero,XMR,10971866799,1386327,7914,usage
+Dogecoin,DOGE,10941146556,361943,30229,near_zero_by_design
+Cardano,ADA,6663993692,944239,7058,usage
