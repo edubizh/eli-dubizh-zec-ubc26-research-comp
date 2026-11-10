@@ -44,11 +44,9 @@ pdflatex -output-directory report -jobname Zcash_ZEC_Short_Thesis_UBC2026 report
 ---
 
 <div align="center">
-<sub>
 
-A note from me. This has been an incredible experience. I steered every decision from the first idea to the final page, and being able to use AI to help me build the visual analyses and pressure test the argument made the work better than I could have made it alone. This last session was the polish, the wording, the styling, the design, all the small things before I hit submit. It really did feel human, because it was.
+*A note from me. This has been an incredible experience. I steered every decision from the first idea to the final page, and being able to use AI to help me build the visual analyses and pressure test the argument made the work better than I could have made it alone. This last session was the polish, the wording, the styling, the design, all the small things before I hit submit. It really did feel human, because it was.*
 
-handoff count (opus 4.8) = 2
+<sub>handoff count (opus 4.8) = 2</sub>
 
-</sub>
 </div>
