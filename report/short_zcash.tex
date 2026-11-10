@@ -188,9 +188,26 @@ Zcash hides transaction details with zero knowledge cryptography, on a fixed cap
 \end{center}
 
 \subsection{It has not earned the valuation}
-Here is the comparison that settles it. Hyperliquid is worth about what Zcash is, around \$18 billion. Last year Hyperliquid earned \$895 million in fees. Zcash earned \$712,000. Same price, a thousand times the business. It is not just Hyperliquid. Measured on fees, Zcash is the most expensive large asset in crypto, and even Monero, the other privacy coin at half the market cap, earns nearly twice the fees. Usage is not zero and it is rising, but it does not reach the token: people use the network without paying it, so the activity never becomes revenue. Figure 2 puts every top ten asset on one map, and Zcash sits alone in the corner.
+Here is the comparison that settles it. Hyperliquid is worth about what Zcash is, around \$18 billion. Last year Hyperliquid earned \$895 million in fees. Zcash earned \$712,000. Same price, a thousand times the business. It is not just Hyperliquid. Measured on fees, Zcash is the most expensive large asset in crypto, and even Monero, the other privacy coin at half the market cap, earns nearly twice the fees. Usage is not zero and it is rising, but it does not reach the token: people use the network without paying it, so the activity never becomes revenue. The table below ranks the top of the market on a single yardstick, and Figure 2 is the same point drawn as a map, with Zcash alone in the corner.
+
+\vspace{2pt}
+\begin{center}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+{\sffamily\footnotesize\color{mid}NETWORK} & {\sffamily\footnotesize\color{mid}MARKET CAP} & {\sffamily\footnotesize\color{mid}FEES, PAST YEAR} & {\sffamily\footnotesize\color{mid}PRICE TO FEES} \\
+\midrule
+Hyperliquid & \$18B & \$895M & about 20 times \\
+Tron & \$30B & \$334M & about 90 times \\
+Solana & \$53B & \$231M & about 230 times \\
+Ethereum & \$274B & \$177M & about 1,500 times \\
+Monero & \$11B & \$1.4M & about 7,900 times \\
+\textbf{Zcash} & \textbf{\$20B} & \textbf{\$0.7M} & \textbf{about 28,000 times} \\
+\bottomrule
+\end{tabular}
+\end{center}
 
 \begin{center}
+\begin{minipage}{\linewidth}\centering
 \charttitle{Figure 2 \quad A valuation map: market value against what the network earns}
 \begin{tikzpicture}
 \begin{axis}[
@@ -227,6 +244,7 @@ Here is the comparison that settles it. Hyperliquid is worth about what Zcash is
 \end{axis}
 \end{tikzpicture}
 \chartcap{Every top ten asset, market cap vs yearly fees. Log scales. Source: CoinGecko, DefiLlama.}
+\end{minipage}
 \end{center}
 
 \subsection{The token, and who holds it}
@@ -257,19 +275,28 @@ About 17 million of the 21 million cap are mined, so roughly a fifth of the supp
 \end{minipage}
 
 \subsection{It is not sound money either}
-\begin{wrapfigure}{l}{0.4\linewidth}
-\vspace{-8pt}
-\sidebox{A four year bug, a 64\% crash}{A counterfeiting flaw in the Orchard pool was live for \textbf{about four years}. It could have minted \textbf{unlimited} coins, and because privacy hides everything, \textbf{nobody can prove it was never used}. Around the disclosure Zcash fell \textbf{64\%}.}
-\vspace{-6pt}
+\begin{wrapfigure}{r}{0.42\linewidth}
+\vspace{-4pt}
+\charttitle{Security is bought with inflation}
+\begin{tikzpicture}
+\begin{axis}[
+  width=\linewidth, height=3.5cm,
+  ymin=10, ymax=36, xmin=0.5, xmax=14.5,
+  axis x line=bottom, axis y line=left,
+  x axis line style={draw=rulegray}, y axis line style={draw=rulegray},
+  xtick={1,7,14}, xticklabels={Nov 25,May 26,Nov 26}, xticklabel style={font=\tiny\color{mid}},
+  ytick={12,22,32}, yticklabel style={font=\tiny\color{mid}}, clip=false,
+]
+\addplot[zecgold,line width=1.3pt] coordinates {(1,11.9)(2,13.8)(3,13.6)(4,13.1)(5,13.0)(6,13.6)(7,13.8)(8,15.8)(9,17.8)(10,22.8)(11,24.9)(12,28.7)(13,31.5)(14,33.8)};
+\node[font=\tiny,text=ink,anchor=north west,align=left] at (axis cs:1,35) {hashrate tripled,\\chasing price};
+\end{axis}
+\end{tikzpicture}
+\chartcap{Hashrate, gigasol/s. Over 90 days, 99.8\% of miner pay is new supply.}
+\vspace{-4pt}
 \end{wrapfigure}
 The bull reply is that Zcash is money, a private Bitcoin, so fees are the wrong lens. Fine. Then it has to clear the bar money clears, and it does not. In 2026 researchers found a counterfeiting flaw in the Orchard shielded pool that had been live for about four years and could have minted unlimited coins nobody could see. Because every transaction is hidden, not even the developers can prove it was never used. That is the opposite of Bitcoin, whose supply anyone can audit in seconds. The rest is no better. The founding team at the Electric Coin Company resigned in January, and the price fell about 14\% that week. Issuance runs near 3.3\% a year, and a fifth of every block goes to a developer fund, not to holders. Security is bought with inflation, not usage: over the last 90 days, 99.8\% of what miners earned was newly printed supply and 0.2\% was fees. And privacy is optional, so under a third of the supply is ever shielded. That is not a smaller Bitcoin.
 
 \subsection{Catalysts, and the bull case we have to beat}
-\begin{wrapfigure}{r}{0.4\linewidth}
-\vspace{-8pt}
-\sidebox{The reflexive bid is cracking}{The Cypherpunk treasury trades about \textbf{18\% below} the value of its own Zcash. The Grayscale fund hit \$1B of assets on only \textbf{\$306M} of real inflows, then lost a \textbf{\$93.6M} week. The tape is \textbf{14x} more futures than spot.}
-\vspace{-6pt}
-\end{wrapfigure}
 To be fair, the bull case is not empty. Arthur Hayes has said Zcash could reach ten to twenty percent of Bitcoin, and Multicoin and Paradigm bought in. The pitch is that privacy gets scarce as artificial intelligence makes everything traceable, and Zcash is the cleanest public way to own it. I take that seriously. But the catalysts meant to carry it are already in the price or already turning. The spot fund that was the big new buyer has flipped to outflows. The treasury built to absorb supply trades below the value of its own coins, so the market will no longer pay it to keep buying. The scheduled events ahead cut against holders: the developer fund is up for debate, miners keep selling new supply, and NU7 now routes most of the few fees that exist away from security. What is left is a story carried by a crowded, levered long.
 
 \textbf{Risks to the short.} Momentum and the squeeze are real, and we respect a move to \$2,000; we size small and lean on the gap. A spot fund that reaccelerates or renewed treasury buying would extend the mania. Usage is genuinely rising, and a regulatory overhang could cut either way, so we treat regulation as a secondary risk, not the thesis.
@@ -376,62 +403,27 @@ Under a third of the supply is ever shielded.}
 
 % ======================= APPENDIX =======================
 \clearpage
-\section*{Appendix \quad {\normalsize\mdseries\color{mid} The numbers behind the short}}
-\vspace{4pt}
+\section*{Appendix \quad {\normalsize\mdseries\color{mid} Zcash by the numbers, November 2026}}
+\vspace{6pt}
 
-\noindent
-\begin{minipage}[t]{0.52\linewidth}
-\charttitle{Price to fees, same methodology for every chain}
 \begin{center}
-\begin{tabular}{@{}lrr@{}}
+\begin{tabular}{@{}ll@{}}
 \toprule
-{\sffamily\footnotesize\color{mid}ASSET} & {\sffamily\footnotesize\color{mid}CAP} & {\sffamily\footnotesize\color{mid}PRICE TO FEES} \\
+{\sffamily\footnotesize\color{mid}MEASURE} & {\sffamily\footnotesize\color{mid}VALUE} \\
 \midrule
-Hyperliquid & \$18B & about 20 times \\
-Tron & \$30B & about 90 times \\
-Solana & \$53B & about 230 times \\
-Ethereum & \$274B & about 1,500 times \\
-Monero & \$11B & about 7,900 times \\
-\textbf{Zcash} & \textbf{\$20B} & \textbf{about 28,000 times} \\
+Market capitalization & about \$20B, rank 10 \\
+Network fees, past year & about \$712,000 \\
+Network fees, third quarter 2026 & about \$204,000 \\
+Price to network fees & about 28,000 times \\
+Share of supply shielded & about 29\%, privacy optional \\
+Fee value from transparent transactions & about 60\% \\
+Annual issuance & about 3.3\%, a fifth to a developer fund \\
+Daily transactions & about 7,800, versus Monero near 29,500 \\
+Annualized volatility & about 132\% \\
+Largest corporate holder & Cypherpunk, about 1.9\% of supply, \$342 cost \\
 \bottomrule
 \end{tabular}
 \end{center}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.44\linewidth}
-\charttitle{Security is bought with inflation}
-\begin{tikzpicture}
-\begin{axis}[
-  width=\linewidth, height=3.6cm,
-  ymin=10, ymax=36, xmin=0.5, xmax=14.5,
-  axis x line=bottom, axis y line=left,
-  x axis line style={draw=rulegray}, y axis line style={draw=rulegray},
-  xtick={1,7,14}, xticklabels={Nov 25,May 26,Nov 26}, xticklabel style={font=\tiny\color{mid}},
-  ytick={12,22,32}, yticklabel style={font=\tiny\color{mid}}, clip=false,
-]
-\addplot[zecgold,line width=1.3pt] coordinates {(1,11.9)(2,13.8)(3,13.6)(4,13.1)(5,13.0)(6,13.6)(7,13.8)(8,15.8)(9,17.8)(10,22.8)(11,24.9)(12,28.7)(13,31.5)(14,33.8)};
-\node[font=\tiny,text=ink,anchor=north west,align=left] at (axis cs:1,35) {hashrate tripled,\\chasing price};
-\end{axis}
-\end{tikzpicture}
-\chartcap{Hashrate (gigasol/s). Over 90 days 99.8\% of miner pay was new supply, 0.2\% fees.}
-\end{minipage}
-
-\vspace{12pt}
-\noindent
-\begin{minipage}[t]{0.47\linewidth}
-\charttitle{Zcash by the numbers, November 2026}
-{\footnotesize\color{ink}
-Network fees, past year: about \$712,000. \\
-Network fees, Q3 2026: about \$204,000. \\
-Share of supply shielded: about 29\%. \\
-Fee value from transparent tx: about 60\%. \\
-Annual issuance: about 3.3\%, a fifth to a dev fund. \\
-Daily transactions: about 7,800, versus Monero near 29,500. \\
-Largest holder: Cypherpunk, about 1.9\% of supply.}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.47\linewidth}
-\charttitle{The four year bug}
-\sidebox{A counterfeiting flaw nobody can close}{The Orchard flaw was live \textbf{about four years} and could have minted \textbf{unlimited} coins. Because privacy hides everything, the developers \textbf{cannot prove it was never used}. Around the disclosure Zcash fell \textbf{64\%}. That is the opposite of a store of value.}
-\end{minipage}
 
 % ======================= REFERENCES =======================
 \clearpage
