@@ -40,3 +40,15 @@ pdflatex -output-directory report -jobname Zcash_ZEC_Short_Thesis_UBC2026 report
 - `scripts/` free data fetch and transform scripts
 - `data/` frozen, dated CSVs with sources
 - `Franklin Crypto Research Competiton Memo - UBC 2026 .pdf` the competition rules
+
+---
+
+<div align="center">
+<sub>
+
+A note from me. This has been an incredible experience. I steered every decision from the first idea to the final page, and being able to use AI to help me build the visual analyses and pressure test the argument made the work better than I could have made it alone. This last session was the polish, the wording, the styling, the design, all the small things before I hit submit. It really did feel human, because it was.
+
+handoff count (opus 4.8) = 2
+
+</sub>
+</div>
