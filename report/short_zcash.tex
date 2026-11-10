@@ -66,6 +66,7 @@
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18}
 \usetikzlibrary{positioning}
+\usepackage[hidelinks]{hyperref}
 
 % ---------- design helpers ----------
 \newcommand{\charttitle}[1]{{\sffamily\bfseries\footnotesize\color{ink} #1}\par\vspace{1pt}}
@@ -424,6 +425,9 @@ Largest corporate holder & Cypherpunk, about 1.9\% of supply, \$342 cost \\
 \bottomrule
 \end{tabular}
 \end{center}
+
+\vspace{12pt}
+{\footnotesize\color{mid}\textbf{Data and reproducibility.}\quad Every figure in this report is built from free, public data by the scripts in the repository below. Prices and fees from DefiLlama, CoinMetrics, CoinGecko, and Artemis; network revenue from the Blockworks Zcash Token Holder Report; the Orchard disclosure from Allium. Reproduce or audit any number here: \href{https://github.com/edubizh/eli-dubizh-zcash-ubc26-research-comp}{github.com/edubizh/eli-dubizh-zcash-ubc26-research-comp}}
 
 % ======================= REFERENCES =======================
 \clearpage
