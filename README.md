@@ -42,5 +42,4 @@ pdflatex -output-directory report -jobname Zcash_ZEC_Short_Thesis_UBC2026 report
 - `Franklin Crypto Research Competiton Memo - UBC 2026 .pdf` the competition rules
 
 ### AI
-How much AI I used on this submission, stated plainly. I steered every decision and used AI to help build the visual analyses and polish the report.
 - handoff count (opus 4.8) = 2
