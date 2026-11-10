@@ -11,7 +11,7 @@ Asset:         Zcash (ZEC)
 Direction:     Short
 Date:          November 2026
 Contact:       ed200419@gmail.com
-Report:        report/Zcash_ZEC_Short_Thesis_UBC2026.pdf
+Report:        report/Eli_Dubizh_Zcash_ZEC_Short_Thesis_UBC2026.pdf
 ```
 
 ### Thesis
@@ -39,12 +39,12 @@ Frozen data lives in `data/`. The report is one self contained LaTeX file with p
 
 ```bash
 # build the PDF (run twice so the running headers settle)
-pdflatex -output-directory report -jobname Zcash_ZEC_Short_Thesis_UBC2026 report/short_zcash.tex
+pdflatex -output-directory report -jobname Eli_Dubizh_Zcash_ZEC_Short_Thesis_UBC2026 report/short_zcash.tex
 ```
 
 ### Files
 - `report/short_zcash.tex` report source
-- `report/Zcash_ZEC_Short_Thesis_UBC2026.pdf` the report
+- `report/Eli_Dubizh_Zcash_ZEC_Short_Thesis_UBC2026.pdf` the report
 - `scripts/` free data fetch and transform scripts
 - `data/` frozen, dated CSVs with sources
 - `Franklin Crypto Research Competiton Memo - UBC 2026 .pdf` the competition rules
